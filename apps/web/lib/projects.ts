@@ -96,7 +96,7 @@ function probeDuration(sourcePath: string): Promise<number> {
 
 let defaultProjectStore: ProjectStore | undefined;
 
-function getDefaultProjectStore(): ProjectStore {
+export function getDefaultProjectStore(): ProjectStore {
   defaultProjectStore ??= new RedisProjectStore(new Redis(webConfig.redisUrl));
   return defaultProjectStore;
 }

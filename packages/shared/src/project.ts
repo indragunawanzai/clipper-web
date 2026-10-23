@@ -8,6 +8,7 @@ export const createProjectSchema = z.object({
   createdAt: z.iso.datetime(),
   durationSeconds: z.number().finite().nonnegative(),
   latestExportStatus: exportStatusSchema.optional(),
+  latestExportJobId: z.string().min(1).optional(),
 });
 
 export type Project = z.infer<typeof createProjectSchema>;
