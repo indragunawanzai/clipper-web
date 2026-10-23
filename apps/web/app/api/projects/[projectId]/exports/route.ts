@@ -1,4 +1,4 @@
-import { queueExport } from "../../../../../lib/exports.js";
+import { queueExport } from "../../../../../lib/exports";
 
 type RouteContext = { params: Promise<{ projectId: string }> };
 

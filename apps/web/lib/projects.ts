@@ -4,13 +4,13 @@ import { rm } from "node:fs/promises";
 import { createProjectSchema, type Project } from "@clipper/shared";
 import { Redis } from "ioredis";
 
-import { webConfig } from "./config.js";
+import { webConfig } from "./config";
 import {
   acceptedVideoExtension,
   createUploadPath,
   maxUploadSizeBytes,
   persistUpload,
-} from "./local-files.js";
+} from "./local-files";
 
 const projectIndexKey = "projects";
 

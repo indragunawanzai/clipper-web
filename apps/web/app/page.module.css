@@ -31,3 +31,6 @@
   font-size: 1.125rem;
   line-height: 1.6;
 }
+
+.cta { background: #5b5bd6; border-radius: .6rem; color: #fff; font-weight: 700; padding: .8rem 1rem; width: fit-content; }
+.projects { display: grid; gap: .75rem; margin-top: 2rem; }

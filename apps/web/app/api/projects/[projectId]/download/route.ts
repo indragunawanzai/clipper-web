@@ -1,9 +1,9 @@
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 
-import { webConfig } from "../../../../../lib/config.js";
-import { getExportJobStatus } from "../../../../../lib/exports.js";
-import { getProject } from "../../../../../lib/projects.js";
+import { webConfig } from "../../../../../lib/config";
+import { getExportJobStatus } from "../../../../../lib/exports";
+import { getProject } from "../../../../../lib/projects";
 
 type RouteContext = { params: Promise<{ projectId: string }> };
 

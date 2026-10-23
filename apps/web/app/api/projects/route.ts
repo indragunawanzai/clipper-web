@@ -1,4 +1,4 @@
-import { listProjects, saveUpload } from "../../../lib/projects.js";
+import { listProjects, saveUpload } from "../../../lib/projects";
 
 function publicProject(project: Awaited<ReturnType<typeof saveUpload>>) {
   const { sourcePath: _sourcePath, ...safeProject } = project;

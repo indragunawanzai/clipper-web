@@ -4,7 +4,7 @@ import { join } from "node:path";
 
 import { describe, expect, it } from "vitest";
 
-import { saveUpload, type UploadDependencies } from "./projects.js";
+import { saveUpload, type UploadDependencies } from "./projects";
 
 const projectId = "4cc2f80c-00c0-4b46-a6dd-8915499ad0a3";
 

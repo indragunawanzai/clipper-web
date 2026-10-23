@@ -1,4 +1,4 @@
-import { getProject } from "../../../../lib/projects.js";
+import { getProject } from "../../../../lib/projects";
 
 type RouteContext = {
   params: Promise<{ projectId: string }>;

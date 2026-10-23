@@ -10,8 +10,8 @@ import {
 } from "@clipper/shared";
 import { Redis } from "ioredis";
 
-import { webConfig } from "./config.js";
-import { getDefaultProjectStore, type ProjectStore } from "./projects.js";
+import { webConfig } from "./config";
+import { getDefaultProjectStore, type ProjectStore } from "./projects";
 
 const exportQueueName = "exports";
 const activeStates = new Set(["waiting", "active", "delayed", "prioritized"]);

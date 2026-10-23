@@ -1,4 +1,4 @@
-import { getExportJobStatus } from "../../../../lib/exports.js";
+import { getExportJobStatus } from "../../../../lib/exports";
 
 type RouteContext = { params: Promise<{ jobId: string }> };
 

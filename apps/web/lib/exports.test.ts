@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { queueExport, type ExportDependencies } from "./exports.js";
+import { queueExport, type ExportDependencies } from "./exports";
 
 const project = {
   id: "4cc2f80c-00c0-4b46-a6dd-8915499ad0a3",
