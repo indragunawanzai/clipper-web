@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { exportStatusSchema } from "./export.js";
+import { exportStatusSchema } from "./export";
 
 export const createProjectSchema = z.object({
   id: z.uuid(),

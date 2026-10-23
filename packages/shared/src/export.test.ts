@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { createExportRequestSchema } from "./export.js";
+import { createExportRequestSchema } from "./export";
 
 describe("createExportRequestSchema", () => {
   it("accepts a vertical export request", () => {

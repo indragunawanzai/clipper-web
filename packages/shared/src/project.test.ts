@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { createProjectSchema } from "./project.js";
+import { createProjectSchema } from "./project";
 
 describe("createProjectSchema", () => {
   it("accepts a local project record", () => {
