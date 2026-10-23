@@ -25,7 +25,10 @@ describe("VideoEditor", () => {
   it("disables export when the end time is not after the start time", () => {
     render(createElement(VideoEditor, { project }));
 
-    expect(screen.getByRole("button", { name: "Export clip" }).hasAttribute("disabled")).toBe(true);
+    const exportButton = screen.getByRole("button", { name: "Export clip" });
+
+    expect(exportButton.hasAttribute("disabled")).toBe(true);
+    expect(exportButton.getAttribute("data-slot")).toBe("button");
   });
 
   it("posts numeric times with the fixed vertical preset", async () => {
