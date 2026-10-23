@@ -19,7 +19,8 @@ describe("ProjectList", () => {
     render(createElement(ProjectList, { projects: [] }));
 
     expect(screen.getByText("No projects yet")).toBeTruthy();
-    expect(screen.getByText("Upload an owned video to start your first clip.")).toBeTruthy();
+    expect(screen.getByText("Upload an owned video, choose the highlight, then export one clean vertical clip.")).toBeTruthy();
+    expect(screen.getByRole("link", { name: "Create your first project" }).getAttribute("href")).toBe("/projects/new");
   });
 
   it("renders each project as a dashboard card that links to its workspace", () => {
