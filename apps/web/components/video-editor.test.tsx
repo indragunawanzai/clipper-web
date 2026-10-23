@@ -29,6 +29,7 @@ describe("VideoEditor", () => {
 
     expect(exportButton.hasAttribute("disabled")).toBe(true);
     expect(exportButton.getAttribute("data-slot")).toBe("button");
+    expect(exportButton.getAttribute("data-ui")).toBe("export-action");
   });
 
   it("posts numeric times with the fixed vertical preset", async () => {
