@@ -1,0 +1,22 @@
+{
+  "name": "@clipper/worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/worker.ts",
+    "start": "node src/worker.ts",
+    "test": "vitest run",
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@clipper/shared": "workspace:*",
+    "bullmq": "^5.70.1",
+    "ioredis": "^5.8.2"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "^22.19.13",
+    "vitest": "^4.1.12"
+  }
+}
